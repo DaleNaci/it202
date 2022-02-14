@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Assignment</title>
+    </head>
+    <body>
+        <form>
+            <input type="text"
+                   id="ucid"
+                   name="ucid"
+                   placeholder="Enter UCID"
+                   title="A UCID is a sequence of letters followed by zero to three digits.">
+            <label for="ucid"> UCID</label><br><br>
+            <input type="submit" value="Submit" onclick="check_ucid()">
+        </form>
+
+        <script>
+            const re = /[A-Za-z]+\d{0,3}/;
+            const ucids = [
+                "dtn22",
+                "jbv4",
+                "djv5",
+                "jcb69",
+                "tvt4",
+                "sap22"
+            ];
+
+            function check_ucid() {
+                var input = document.getElementById("ucid").value;
+
+                if (re.test(input)) {
+                    if (ucids.includes(input)) {
+                        alert("VALID UCID FORMAT AND UCID FOUND");
+                    } else {
+                        alert("VALID UCID FORMAT BUT INVALID UCID");
+                    }
+                } else {
+                    alert("UCID DOES NOT CONFORM TO VALID FORMAT");
+                }
+            }
+        </script>
+    </body>
+</html>
