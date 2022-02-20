@@ -1,0 +1,44 @@
+html {
+    font-family: Helvetica, sans-serif;
+    background-color: #d4ffd1;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #c79200;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+.cover_photo {
+    width: 100%;
+    z-index: 0;
+}
+
+.map_photo {
+    width: 50%;
+    z-index: 0;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.exhibit {
+    font-weight: bold;
+}
