@@ -1,0 +1,18 @@
+body {
+    background-image: url("website_background.jpeg");
+    font-family: arial;
+}
+
+form {
+    margin-left: 5px;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 45%;
+    margin: 0 auto;
+}
+
+#content h1 {
+    text-align: center;
+}
