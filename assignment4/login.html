@@ -60,11 +60,6 @@
             var re_phone = /^\d{3}(-|\040)\d{3}(-|\040)\d{4}/;
             var re_email = /^\w+@\w+\.\w{2,4}/;
 
-            landscapers = [
-                {fname: "Dale", lname: "Nacianceno", pass: "abc123", phonenum: "555-555-5555", idnum: "555555", email: "dtn22@njit.edu"},
-                {fname: "Kie", lname: "Li", pass: "abc123", phonenum: "123-456-7890", idnum: "444444", email: "jl263@njit.edu"}
-            ];
-
             function validate() {
                 if (document.getElementById("fname").value.search(re_names) == -1) {
                     alert("First Name Format: Capital letters or lowercase letters");
@@ -90,28 +85,7 @@
             }
 
             function verification() {
-                for (let i = 0; i < landscapers.length; i++) {
-                    if (document.getElementById("fname").value == landscapers[i].fname
-                            && document.getElementById("lname").value == landscapers[i].lname
-                            && document.getElementById("pass").value == landscapers[i].pass
-                            && document.getElementById("idnum").value == landscapers[i].idnum
-                            && document.getElementById("phonenum").value == landscapers[i].phonenum) {
-                        if (document.getElementById("email_label").checked && document.getElementById("email").value == landscapers[i].email
-                                || !document.getElementById("email_label").checked) {
-                            alert("Hi, "
-                                    + document.getElementById("fname").value
-                                    + " "
-                                    + document.getElementById("lname").value
-                                    + ".\n Your transaction is: "
-                                    + document.getElementById("transaction").value);
-                        } else {
-                            alert("This user does not exist.");
-                        }
-                        return;
-                    }
-                }
-
-                alert("This user does not exist.");
+                alert("verification()");
             }
 
             function email_required_visibility() {
