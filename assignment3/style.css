@@ -16,12 +16,23 @@ body {
 form {
     margin-left: 5px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
 }
 
 #content {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 45%;
+    width: 80%;
     margin: 0 auto;
+    text-align: center;
+    justify-content: center;
 }
 
 #content h1 {
